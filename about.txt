@@ -1,0 +1,5 @@
+Theme name:    Theme Marco 0.1
+Description:   Forked version of the default theme.
+Author name:   Marco van Poortvliet
+Author site:   http://marcovp.com
+License:
