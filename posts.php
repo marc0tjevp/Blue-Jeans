@@ -12,6 +12,12 @@
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
 
+					<?php if (article_custom_field('article_image')) :?>
+						<div class="blog-image-header"
+								 style="background-image: url('<?=article_custom_field('article_image', article_id())?>')">
+						</div>
+					<?php endif; ?>
+
 					<div class="content">
 						<?php echo article_html(); ?>
 					</div>
@@ -21,7 +27,7 @@
 					</footer>
 
 					<div class="article-seperator"></div>
-					
+
 				</article>
 			</li>
 
@@ -32,6 +38,13 @@
 					<h1>
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
+
+					<?php if (article_custom_field('article_image')) :?>
+						<div class="blog-image-header"
+								 style="background-image: url('<?=article_custom_field('article_image', article_id())?>')">
+						</div>
+					<?php endif; ?>
+
 
 					<div class="content">
 						<?php echo article_html(); ?>
