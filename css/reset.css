@@ -4,10 +4,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	
+
 	-webkit-font-smoothing: antialiased;
-	
-	/* Don't count padding and borders towards widths */ 
+
+	/* Don't count padding and borders towards widths */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -36,11 +36,12 @@ p {
 }
 
 pre {
-	padding: 15px 20px;
-	margin-bottom: 20px;
-	
-	border-radius: 5px;
 	white-space: pre-wrap;
+	padding-bottom: 15px;
+}
+
+code {
+	border-radius: 5px;
 }
 
 img {
@@ -62,7 +63,7 @@ a {
 	min-width: 280px;
 	max-width: 750px;
 	width: 60%;
-	
+
 	margin: 0 auto;
 }
 
@@ -78,12 +79,6 @@ a, .items h1 a:hover {
 	a:hover {
 		color: #1e4d92;
 	}
-	
-pre, .hilite, mark {
-	background: #f9f6ea;
-	color: #8b7c65;
-	text-shadow: 0 1px 0 rgba(255,255,255,.2);
-}
 
 input, textarea {
 	color: #697281;
@@ -94,14 +89,14 @@ input, textarea {
 	:-moz-placeholder, :placeholder {
 		color: #b2b9c5;
 	}
-	
+
 .error, .success {
 	padding: 20px 30px;
 	margin-bottom: 30px;
 
 	background: #e25d47;
 	color: #fff;
-	
+
 	border-radius: 5px;
 }
 	.success {
