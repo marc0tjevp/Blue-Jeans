@@ -1,7 +1,6 @@
 ## Blue Jeans
 
 This theme is made to work with Anchor CMS. If you want to try it yourself you can copy the contents to the themes folder in your Anchor setup.
-The Theme is based on the standard theme, but I adjusted it slightly.
 
 ## Article Images
 
@@ -19,3 +18,11 @@ When done, you can upload an image when making/editing an article.
 
 To highlight code, the theme makes use of [Highlight.js](https://github.com/isagalaev/highlight.js). To enable it, you have to create a site variable.
 To add this, log in to the admin panel and go to Extend > Site Variables > Create a new variable. The name must be code_highlighting, you can set it either true or false.
+
+## Emoji's
+
+The theme supports a variety of emoji's which can be found [here](https://www.webpagefx.com/tools/emoji-cheat-sheet/). You can insert emoji's by using markdown. Just remove the "::" and change underscores to hyphens to use them :smile:
+
+```
+[emoji-name](#emoji-name)
+```

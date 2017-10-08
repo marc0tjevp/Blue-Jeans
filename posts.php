@@ -12,7 +12,7 @@
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
 
-					<?php if (article_custom_field('article_image')) :?>
+					<?php if (article_custom_field('article_image') && article_custom_field('article_image') != "/content/content") :?>
 						<div class="blog-image-header"
 								 style="background-image: url('<?=article_custom_field('article_image', article_id())?>')">
 						</div>
