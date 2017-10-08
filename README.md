@@ -17,5 +17,5 @@ When done, you can upload an image when making/editing an article.
 
 ![Code Highlighting](highlight.png)
 
-To highlight code, the theme makes use of (Highlight.js)[https://github.com/isagalaev/highlight.js]. To enable it, you have to create a site variable.
+To highlight code, the theme makes use of [Highlight.js](https://github.com/isagalaev/highlight.js). To enable it, you have to create a site variable.
 To add this, log in to the admin panel and go to Extend > Site Variables > Create a new variable. The name must be code_highlighting, you can set it either true or false.
