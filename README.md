@@ -1,9 +1,12 @@
 ## Blue Jeans
 
-![Blue Jeans](posts.png)
+Blue Jeans is a simple theme made for Anchor CMS, based on the default theme (includes the slider). It supports Emoji's, article images and advanced code highlighting.
+
 ![Article Page](article.png)
 
-This theme is made to work with Anchor CMS. If you want to try it yourself you can copy the contents to the themes folder in your Anchor setup.
+## Installation
+
+Copy all files into the themes folder in your anchor setup. You can set the theme by navigating to Extend > Site Settings > Appearance.
 
 ## Article Images
 
