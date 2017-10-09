@@ -1,8 +1,16 @@
 <?php theme_include('header'); ?>
+
+		<?php if (article_custom_field('article_image') && article_custom_field('article_image') != "/content/content") :?>
+			<header class="banner">
+				<span class="background" style="background-image: url('<?=article_custom_field('article_image', article_id())?>')"></span>
+			</header>
+		<?php endif; ?>
+
 		<section class="content wrap" id="article-<?php echo article_id(); ?>">
-			<h1><?php echo article_title(); ?></h1>
 
 			<article>
+				<h1><?php echo article_title(); ?></h1>
+
 				<?php echo article_html(); ?>
 			</article>
 

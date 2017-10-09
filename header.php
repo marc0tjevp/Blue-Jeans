@@ -19,7 +19,7 @@
 
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 400px)">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 500px)">
 
 		<!-- Highlight.JS -->
 		<?php if (site_meta('code_highlighting')) :?>

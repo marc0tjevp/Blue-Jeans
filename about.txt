@@ -1,4 +1,4 @@
-Theme name:    Blue Jeans 0.4
+Theme name:    Blue Jeans 0.5
 Description:   Forked version of the default theme.
 Author name:   Marco van Poortvliet
 Author site:   http://marcovp.com

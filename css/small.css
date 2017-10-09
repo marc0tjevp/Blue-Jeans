@@ -1,7 +1,11 @@
 /**
  *   Small device CSS, mostly to fix alignment
  */
- 
+
+ .posts .wrap {
+   border: 0px solid;
+ }
+
 #top {
 	position: relative;
 }
@@ -16,7 +20,7 @@
 		#top ul li {
 			padding: 10px 15px 0 0;
 		}
-	
+
 .slidey form, .slidey aside {
 	float: none;
 	width: 100%;
@@ -24,16 +28,16 @@
 	.slidey form {
 		margin-bottom: 25px;
 	}
-	
+
 #comment p, .footnote {
 	float: none;
 	width: 100%;
-	
+
 	white-space: normal;
 }
-	
+
 #bottom {
-	padding: 20px 0;
+	padding: 20px 20px;
 }
 	#bottom small {
 		display: block;

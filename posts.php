@@ -8,9 +8,6 @@
 
 			<li>
 				<article class="wrap">
-					<h1>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h1>
 
 					<?php if (article_custom_field('article_image') && article_custom_field('article_image') != "/content/content") :?>
 						<div class="blog-image-header"
@@ -18,13 +15,21 @@
 						</div>
 					<?php endif; ?>
 
-					<div class="content">
-						<?php echo article_html(); ?>
-					</div>
+					<div class="article-body">
 
-					<footer>
-						Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
-					</footer>
+						<h1>
+							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+						</h1>
+
+						<div class="content">
+							<?php echo article_html(); ?>
+						</div>
+
+						<footer>
+							Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
+						</footer>
+
+					</div>
 
 					<div class="article-seperator"></div>
 
@@ -35,24 +40,28 @@
 			<?php $bg = sprintf('background: hsl(215, 28%%, %d%%);', round(((++$i / posts_per_page()) * 20) + 20)); ?>
 			<li>
 				<article class="wrap">
-					<h1>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h1>
 
-					<?php if (article_custom_field('article_image')) :?>
+					<?php if (article_custom_field('article_image') && article_custom_field('article_image') != "/content/content") :?>
 						<div class="blog-image-header"
 								 style="background-image: url('<?=article_custom_field('article_image', article_id())?>')">
 						</div>
 					<?php endif; ?>
 
+					<div class="article-body">
 
-					<div class="content">
-						<?php echo article_html(); ?>
+						<h1>
+							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+						</h1>
+
+						<div class="content">
+							<?php echo article_html(); ?>
+						</div>
+
+						<footer>
+							Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
+						</footer>
+
 					</div>
-
-					<footer>
-						Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
-					</footer>
 
 					<div class="article-seperator"></div>
 
