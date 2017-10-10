@@ -16,7 +16,10 @@
 		<?php endif; ?>
 
 		<meta name="description" content="<?php echo site_description(); ?>">
+		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
+
+		<!-- Theme Stylesheets -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 500px)">
@@ -31,8 +34,11 @@
 		<!--- Emoji CSS -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css') ?>">
 
+		<!-- reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

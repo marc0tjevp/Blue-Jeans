@@ -433,6 +433,12 @@ ul.commentlist .counter {
   font-weight: 500;
 }
 
+#comment .g-recaptcha {
+  float: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 #comment button:hover {
   background: #3c6eb7;
 }

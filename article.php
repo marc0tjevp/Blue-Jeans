@@ -58,6 +58,8 @@
 					<?php echo comment_form_input_text('placeholder="Your comment"'); ?>
 				</p>
 
+				<div class="g-recaptcha" data-sitekey="<?php echo site_meta('recaptcha_sitekey'); ?>"></div>
+
 				<p class="submit">
 					<?php echo comment_form_button(); ?>
 				</p>
