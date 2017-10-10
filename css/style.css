@@ -290,15 +290,6 @@ body.loaded {
   margin: 0 auto;
 }
 
-.posts .wrap {
-  border: 0.4px solid;
-  border-radius: 2px;
-}
-
-.article .wrap {
-  border: 0px;
-}
-
 .content {
   padding-bottom: 50px;
 }
