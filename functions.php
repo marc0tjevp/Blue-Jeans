@@ -1,11 +1,5 @@
 <?php
 
-/*
-    Custom theme functions
-
-    Note: we recommend you prefix all your functions to avoid any naming
-    collisions or wrap your functions with if function_exists braces.
-*/
 function numeral($number, $hideIfOne = false)
 {
     if ($hideIfOne === true and $number == 1) {

@@ -2,22 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<!-- <title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title> -->
 
-		<?php if(is_article()): ?>
+		<!-- Page Title -->
+		<?php if (is_article()): ?>
 	    	<title><?php echo article_title(); ?></title>
-	    	<meta name="description" content="<?php echo article_description(); ?>">
-		<?php elseif(is_homepage()): ?>
+		<?php elseif (is_homepage()): ?>
 		    <title><?php echo site_name(); ?></title>
-		    <meta name="description" content="<?php echo site_description(); ?>">
-		<?php elseif(is_page()): ?>
+		<?php elseif (is_page()): ?>
 		    <title><?php echo page_title(); ?></title>
-		    <meta name="description" content="<?php echo site_description(); ?>">
+			<?php elseif (http_response_code(404)): ?>
+					<title>Page Not Found</title>
 		<?php endif; ?>
-
-		<meta name="description" content="<?php echo site_description(); ?>">
-		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
-
 
 		<!-- Theme Stylesheets -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
@@ -48,15 +43,16 @@
 		<script src="<?php echo asset_url('/js/zepto.js'); ?>"></script>
 		<script src="<?php echo theme_url('/js/main.js'); ?>"></script>
 
-	    <meta name="viewport" content="width=device-width">
-	    <meta name="generator" content="Anchor CMS">
-
-	    <meta property="og:title" content="<?php echo page_title(); ?>">
-	    <meta property="og:type" content="website">
-	    <meta property="og:url" content="<?php echo e(current_url()); ?>">
-	    <meta property="og:image" content="<?php echo theme_url('img/og_image.gif'); ?>">
-	    <meta property="og:site_name" content="<?php echo site_name(); ?>">
-	    <meta property="og:description" content="<?php echo page_description(); ?>">
+		<meta name="description" content="<?php echo site_description(); ?>">
+		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
+	  <meta name="viewport" content="width=device-width">
+	  <meta name="generator" content="Anchor CMS">
+	  <meta property="og:title" content="<?php echo page_title(); ?>">
+	  <meta property="og:type" content="website">
+	  <meta property="og:url" content="<?php echo e(current_url()); ?>">
+	  <meta property="og:image" content="<?php echo theme_url('img/og_image.gif'); ?>">
+	  <meta property="og:site_name" content="<?php echo site_name(); ?>">
+	  <meta property="og:description" content="<?php echo page_description(); ?>">
 
 		<?php if (customised()): ?>
 		    <!-- Custom CSS -->
@@ -65,6 +61,7 @@
     		<!--  Custom Javascript -->
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
+
 	</head>
 	<body class="<?php echo body_class(); ?>">
 		<div class="main-wrap">
@@ -81,12 +78,8 @@
                                 if (category_count() > 0) {
                                     ?>
 							<li>
-								<a href="<?php echo category_url();
-                                    ?>" title="<?php echo category_description();
-                                    ?>">
-									<?php echo category_title();
-                                    ?> <span><?php echo category_count();
-                                    ?></span>
+								<a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
+									<?php echo category_title(); ?> <span><?php echo category_count(); ?></span>
 								</a>
 							</li>
 						<?php
